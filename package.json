@@ -2,9 +2,9 @@
   "name": "@gfk/catalyst",
   "scripts": {
     "start": "webpack serve",
-    "start:standalone": "webpack serve --env standalone",
+    "start:standalone": "webpack serve --port 4003 --env standalone",
     "build": "concurrently yarn:build:*",
-    "build:webpack": "webpack --mode=production",
+    "build:webpack": "set port=8082 && webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src --ext js,ts,tsx",
     "format": "prettier --write .",

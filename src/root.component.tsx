@@ -1,3 +1,5 @@
+import Catalyst from "./Catalyst";
+
 export default function Root(props) {
-  return <div>Catalyst module</div>;
+  return <Catalyst />;
 }
